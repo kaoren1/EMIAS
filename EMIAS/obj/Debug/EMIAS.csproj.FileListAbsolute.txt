@@ -1,0 +1,15 @@
+C:\Users\Яр\source\repos\EMIAS\EMIAS\obj\Debug\EMIAS.csproj.AssemblyReference.cache
+C:\Users\Яр\source\repos\EMIAS\EMIAS\obj\Debug\App.g.cs
+C:\Users\Яр\source\repos\EMIAS\EMIAS\obj\Debug\EMIAS_MarkupCompile.cache
+C:\Users\Яр\source\repos\EMIAS\EMIAS\obj\Debug\EMIAS_MarkupCompile.lref
+C:\Users\Яр\source\repos\EMIAS\EMIAS\bin\Debug\EMIAS.exe.config
+C:\Users\Яр\source\repos\EMIAS\EMIAS\bin\Debug\EMIAS.exe
+C:\Users\Яр\source\repos\EMIAS\EMIAS\bin\Debug\EMIAS.pdb
+C:\Users\Яр\source\repos\EMIAS\EMIAS\obj\Debug\EMIAS.g.resources
+C:\Users\Яр\source\repos\EMIAS\EMIAS\obj\Debug\EMIAS.Properties.Resources.resources
+C:\Users\Яр\source\repos\EMIAS\EMIAS\obj\Debug\EMIAS.csproj.GenerateResource.cache
+C:\Users\Яр\source\repos\EMIAS\EMIAS\obj\Debug\EMIAS.csproj.CoreCompileInputs.cache
+C:\Users\Яр\source\repos\EMIAS\EMIAS\obj\Debug\EMIAS.exe
+C:\Users\Яр\source\repos\EMIAS\EMIAS\obj\Debug\EMIAS.pdb
+C:\Users\Яр\source\repos\EMIAS\EMIAS\obj\Debug\View\AuthorizePatient.g.cs
+C:\Users\Яр\source\repos\EMIAS\EMIAS\obj\Debug\View\AuthorizePatient.baml
