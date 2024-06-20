@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Яр\source\repos\EMIAS\EMIAS\App.xaml
-1-1036931801
+15947132173
 
-5-1359233761
-13-1310406943
-View\AuthorizePatient.xaml;
+24-119932863
+17-1426748274
+View\AdminDoctorWindow.xaml;View\AdminPatientWindow.xaml;View\AdminWindow.xaml;View\AuthorizeADWindow.xaml;View\AuthorizePatientWindow.xaml;View\DoctorMainWindow.xaml;View\MainPatientPage.xaml;View\MainPatientWindow.xaml;View\MakeAppointmentPage.xaml;View\MakeAppointmentPage2.xaml;View\MakeAppointmentSpecialityPage.xaml;View\MeddicalCardResearchPage.xaml;View\MedicalCardAnalysPage.xaml;View\MedicalCardAppointmentPage.xaml;View\ProfilePatientPage.xaml;
 
 False
 

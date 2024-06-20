@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Яр\source\repos\EMIAS\EMIAS\App.xaml
-13479422004
+15947132173
 
-18-942206220
-13-1310406943
-View\AdminDoctorWindow.xaml;View\AdminPatientWindow.xaml;View\AdminWindow.xaml;View\AuthorizeADWindow.xaml;View\AuthorizePatientWindow.xaml;View\DoctorMainWindow.xaml;View\MainPatientWindow.xaml;View\MakeAppointmentSpecialityWindow.xaml;View\MareAppointmentWindow.xaml;View\MedicalCardAnalysWindow.xaml;View\MedicalCardAppointmentWindow.xaml;View\MedicalCardResearchWndow.xaml;View\ProfilePatientWindow.xaml;
+252092945815
+17-1426748274
+View\AdminDoctorWindow.xaml;View\AdminPatientWindow.xaml;View\AdminWindow.xaml;View\AuthorizeADWindow.xaml;View\AuthorizePatientWindow.xaml;View\DoctorMainWindow.xaml;View\MainPatientPage.xaml;View\MainPatientWindow.xaml;View\MakeAppointmentPage.xaml;View\MakeAppointmentPage2.xaml;View\MakeAppointmentSpecialityPage.xaml;View\MeddicalCardResearchPage.xaml;View\MedicalCardAnalysPage.xaml;View\MedicalCardAppointmentPage.xaml;View\ProfilePatientPage.xaml;
 
-True
+False
 

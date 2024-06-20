@@ -5,8 +5,52 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EMIAS.View"
         mc:Ignorable="d"
-        Title="AuthorizeADWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        Title="AuthorizeAD" Height="220" Width="400">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="110"/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBox Grid.Row="0" Text="{Binding LoginId}" Margin="0,8,0,0" VerticalAlignment="Center" materialDesign:HintAssist.Hint=" Номер сотрудника" HorizontalAlignment="Center"  Width="372" BorderThickness="1" BorderBrush="#EDEDED" Height="27"></TextBox>
+            <TextBox Grid.Row="1" Text="{Binding Password}" Margin="0,8,0,0" VerticalAlignment="Center" materialDesign:HintAssist.Hint=" Пароль" HorizontalAlignment="Center"  Width="372" BorderThickness="1" BorderBrush="#EDEDED" Height="27"></TextBox>
+        </Grid>
+        <Grid Grid.Row="0" Background="#007BFE">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="310"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="1" Foreground="#FFFFFF" Background="Transparent" BorderThickness="0" VerticalAlignment="Center" Style="{x:Null}" HorizontalAlignment="Center" Content="—"></Button>
+                <Button Grid.Column="2" Foreground="#FFFFFF" Background="Transparent" BorderThickness="0"  VerticalAlignment="Center" Style="{x:Null}" HorizontalAlignment="Center" Content="□"></Button>
+                <Button Grid.Column="3" Foreground="#FFFFFF" Background="Transparent" BorderThickness="0"  VerticalAlignment="Center" Style="{x:Null}" HorizontalAlignment="Center"  Content="x"></Button>
+            </Grid>
+            <TextBlock Grid.Row="1" Foreground="#FFFFFF" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Text="ЕМИАС" Style="{x:Null}"></TextBlock>
+            <TextBlock Grid.Row="2" Foreground="#FFFFFF" Text="Единая медицинская информационно-аналитическая система" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="16" TextWrapping="Wrap" TextAlignment="Center" Margin="5,10,5,5" Style="{x:Null}"></TextBlock>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Command="{Binding LoginCommand}" Foreground="#FFFFFF" Background="#007BFE" BorderThickness="0" FontSize="16" Margin="14,12,10,10" Content="Войти" Style="{x:Null}"></Button>
+            <Button Grid.Column="1" Command="{Binding SelectCommand}" Foreground="#FFFFFF" Background="#007BFE" BorderThickness="0" FontSize="16" Margin="10,12,14,10" Content="Я пациент" Style="{x:Null}"></Button>
+        </Grid>
     </Grid>
 </Window>
