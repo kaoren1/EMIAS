@@ -1,18 +1,19 @@
 ﻿
-FC:\Users\Яр\source\repos\EMIAS\EMIAS\App.xaml;;
-FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\AdminDoctorWindow.xaml;;
-FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\AdminPatientWindow.xaml;;
-FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\AdminWindow.xaml;;
-FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\AuthorizeADWindow.xaml;;
-FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\AuthorizePatientWindow.xaml;;
-FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\DoctorMainWindow.xaml;;
-FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\MainPatientPage.xaml;;
-FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\MainPatientWindow.xaml;;
-FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\MakeAppointmentPage.xaml;;
-FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\MakeAppointmentPage2.xaml;;
-FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\MakeAppointmentSpecialityPage.xaml;;
-FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\MeddicalCardResearchPage.xaml;;
-FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\MedicalCardAnalysPage.xaml;;
-FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\MedicalCardAppointmentPage.xaml;;
-FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\ProfilePatientPage.xaml;;
+FE:\инфа\аааа шарп\emias\EMIAS\App.xaml;;
+FE:\инфа\аааа шарп\emias\EMIAS\cards\SpecialistSquareControl.xaml;;
+FE:\инфа\аааа шарп\emias\EMIAS\View\AdminDoctorWindow.xaml;;
+FE:\инфа\аааа шарп\emias\EMIAS\View\AdminPatientWindow.xaml;;
+FE:\инфа\аааа шарп\emias\EMIAS\View\AdminWindow.xaml;;
+FE:\инфа\аааа шарп\emias\EMIAS\View\AuthorizeADWindow.xaml;;
+FE:\инфа\аааа шарп\emias\EMIAS\View\AuthorizePatientWindow.xaml;;
+FE:\инфа\аааа шарп\emias\EMIAS\View\DoctorMainWindow.xaml;;
+FE:\инфа\аааа шарп\emias\EMIAS\View\MainPatientPage.xaml;;
+FE:\инфа\аааа шарп\emias\EMIAS\View\MainPatientWindow.xaml;;
+FE:\инфа\аааа шарп\emias\EMIAS\View\MakeAppointmentPage.xaml;;
+FE:\инфа\аааа шарп\emias\EMIAS\View\MakeAppointmentPage2.xaml;;
+FE:\инфа\аааа шарп\emias\EMIAS\View\MakeAppointmentSpecialityPage.xaml;;
+FE:\инфа\аааа шарп\emias\EMIAS\View\MeddicalCardResearchPage.xaml;;
+FE:\инфа\аааа шарп\emias\EMIAS\View\MedicalCardAnalysPage.xaml;;
+FE:\инфа\аааа шарп\emias\EMIAS\View\MedicalCardAppointmentPage.xaml;;
+FE:\инфа\аааа шарп\emias\EMIAS\View\ProfilePatientPage.xaml;;
 

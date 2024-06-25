@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\c#\emias\EMIAS\obj\Debug\
+E:\инфа\аааа шарп\emias\EMIAS\obj\Debug\
 EMIAS
 none
 false
 DEBUG;TRACE
-D:\c#\emias\EMIAS\App.xaml
-17-542042921
+E:\инфа\аааа шарп\emias\EMIAS\App.xaml
+201320263150
 
-252092945815
-17106307754
-Resources\DarkTheme.xaml;Resources\LightTheme.xaml;View\AdminDoctorWindow.xaml;View\AdminPatientWindow.xaml;View\AdminWindow.xaml;View\AuthorizeADWindow.xaml;View\AuthorizePatientWindow.xaml;View\DoctorMainWindow.xaml;View\MainPatientPage.xaml;View\MainPatientWindow.xaml;View\MakeAppointmentPage.xaml;View\MakeAppointmentPage2.xaml;View\MakeAppointmentSpecialityPage.xaml;View\MeddicalCardResearchPage.xaml;View\MedicalCardAnalysPage.xaml;View\MedicalCardAppointmentPage.xaml;View\ProfilePatientPage.xaml;
+30-1565672688
+171991235829
+cards\DaySquareControl.xaml;cards\HoursSquareControl.xaml;cards\SpecialistSquareControl.xaml;Resources\DarkTheme.xaml;Resources\LightTheme.xaml;View\AdminDoctorWindow.xaml;View\AdminPatientWindow.xaml;View\AdminWindow.xaml;View\AuthorizeADWindow.xaml;View\AuthorizePatientWindow.xaml;View\DoctorMainWindow.xaml;View\MainPatientPage.xaml;View\MainPatientWindow.xaml;View\MakeAppointmentPage.xaml;View\MakeAppointmentPage2.xaml;View\MakeAppointmentSpecialityPage.xaml;View\MeddicalCardResearchPage.xaml;View\MedicalCardAnalysPage.xaml;View\MedicalCardAppointmentPage.xaml;View\ProfilePatientPage.xaml;
 
 True
 

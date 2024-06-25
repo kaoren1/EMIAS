@@ -1,14 +1,166 @@
 ﻿<Page x:Class="EMIAS.View.MakeAppointmentSpecialityPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:EMIAS.View"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="MakeAppointmentSpecialityPage">
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:cards="clr-namespace:EMIAS.cards"
+      xmlns:vm="clr-namespace:EMIAS.ViewModel"
+      mc:Ignorable="d"
+      d:DesignHeight="850" d:DesignWidth="1500"
+      Title="MakeAppointmentSpecialityPage" Cursor="Hand">
+    <Page.DataContext>
+        <vm:MakeAppointmentViewModel/>
+    </Page.DataContext>
 
-    <Grid>
-        
+    <Page.Resources>
+        <!-- анимации -->
+        <Color x:Key="HoverColor">#FF007BFE</Color>
+
+        <Storyboard x:Key="OnMouseOverAnimation">
+            <ColorAnimation Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                        To="{StaticResource HoverColor}" Duration="0:0:0.3"/>
+        </Storyboard>
+
+        <Storyboard x:Key="OnMouseLeaveAnimation">
+            <ColorAnimation Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                        To="Transparent" Duration="0:0:0.3"/>
+        </Storyboard>
+
+        <Storyboard x:Key="OnClickAnimation">
+            <DoubleAnimation Storyboard.TargetProperty="Opacity" To="0" Duration="0:0:0.1"/>
+            <DoubleAnimation Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.1" BeginTime="0:0:0.1"/>
+        </Storyboard>
+
+        <!-- анимации  -->
+        <Storyboard x:Key="TimeOnMouseOverAnimation">
+            <ColorAnimation Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                        To="{StaticResource HoverColor}" Duration="0:0:0.3"/>
+        </Storyboard>
+
+        <Storyboard x:Key="TimeOnMouseLeaveAnimation">
+            <ColorAnimation Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                        To="Transparent" Duration="0:0:0.3"/>
+        </Storyboard>
+
+        <Storyboard x:Key="TimeOnClickAnimation">
+            <DoubleAnimation Storyboard.TargetProperty="Opacity" To="0" Duration="0:0:0.1"/>
+            <DoubleAnimation Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.1" BeginTime="0:0:0.1"/>
+        </Storyboard>
+    </Page.Resources>
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label x:Name="DateLabel" Height="70" VerticalAlignment="Top" Width="400" Grid.Column="3" Grid.Row="0" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+             Content="{Binding CurrentMonth}" />
+        <ScrollViewer Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="9"
+              VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"
+              VerticalAlignment="Top" Grid.Row="1" Background="#FFD6D6D6"
+              Height="Auto">
+            <WrapPanel Orientation="Vertical">
+                <ItemsControl ItemsSource="{Binding Specialists}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <cards:SpecialistSquareControl Width="350" Margin="10"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </WrapPanel>
+        </ScrollViewer>
+
+        <TextBlock Grid.Column="1" Grid.ColumnSpan="2" FontSize="20" Text="Выбор специалиста - (выбор)" 
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0"/>
+        <TextBlock Grid.Column="4" Grid.ColumnSpan="2" Grid.Row="1" FontSize="22" Text="Выбор недели" 
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20 0 0 0"/>
+        <TextBlock Grid.Column="4" Grid.Row="2" Grid.ColumnSpan="2" FontSize="22" Text="Выбор времени" 
+                   HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20 0 0 0"/>
+        <Button x:Name="Back" Grid.Row="9" Command="{Binding BackCommand}" Content="Назад" Width="350" Grid.Column="1" Grid.ColumnSpan="2" Height="28" Margin="0 0 0 4" Foreground="White" VerticalAlignment="Bottom" FontSize="11" HorizontalAlignment="Center" Background="#FF007BFE"/>
+        <Button x:Name="SignUp" Grid.Row="9" Command="{Binding SignUpCommand}" Grid.Column="4" Width="650" Height="28" Margin="0 0 0 4" Content="Записаться на прием" VerticalAlignment="Bottom" Foreground="White" FontSize="11" Cursor="Hand" Background="#FF007BFE" />
+        <ItemsControl x:Name="DaySquaresItemsControl" Margin="0 30 0 0" Grid.Row="1" Grid.RowSpan="1" Grid.Column="3" VerticalAlignment="Center" ItemsSource="{Binding DaysOfMonth}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <cards:DaySquareControl Date="{Binding}" Width="120" Height="40" Margin="10, 0, 10, 10" MouseUp="DaySquareControl_MouseUp">
+                        <cards:DaySquareControl.Style>
+                            <Style TargetType="cards:DaySquareControl">
+                                <Setter Property="Background" Value="Transparent"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsPastDate}" Value="True">
+                                        <Setter Property="Background" Value="LightGray"/>
+                                        <Setter Property="IsEnabled" Value="False"/>
+                                    </DataTrigger>
+                                    <EventTrigger RoutedEvent="Mouse.MouseEnter">
+                                        <BeginStoryboard Storyboard="{StaticResource OnMouseOverAnimation}"/>
+                                    </EventTrigger>
+                                    <EventTrigger RoutedEvent="Mouse.MouseLeave">
+                                        <BeginStoryboard Storyboard="{StaticResource OnMouseLeaveAnimation}"/>
+                                    </EventTrigger>
+                                    <EventTrigger RoutedEvent="MouseLeftButtonDown">
+                                        <BeginStoryboard Storyboard="{StaticResource OnClickAnimation}"/>
+                                    </EventTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </cards:DaySquareControl.Style>
+                    </cards:DaySquareControl>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <ItemsControl Grid.Row="3" Grid.Column="3" Grid.RowSpan="4" Margin="20 0 0 0"
+              ItemsSource="{Binding TimeSlots}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <cards:HoursSquareControl Date="{Binding}" Width="80" Height="40" Margin="10, 10, 10, 10">
+                        <cards:HoursSquareControl.Style>
+                            <Style TargetType="cards:HoursSquareControl">
+                                <Setter Property="Background" Value="Transparent"/>
+                                <Style.Triggers>
+                                    <!-- Анимация наведения -->
+                                    <EventTrigger RoutedEvent="Mouse.MouseEnter">
+                                        <BeginStoryboard Storyboard="{StaticResource TimeOnMouseOverAnimation}"/>
+                                    </EventTrigger>
+                                    <!-- Анимация убирания курсора -->
+                                    <EventTrigger RoutedEvent="Mouse.MouseLeave">
+                                        <BeginStoryboard Storyboard="{StaticResource TimeOnMouseLeaveAnimation}"/>
+                                    </EventTrigger>
+                                    <!-- Анимация клика -->
+                                    <EventTrigger RoutedEvent="MouseLeftButtonDown">
+                                        <BeginStoryboard Storyboard="{StaticResource TimeOnClickAnimation}"/>
+                                    </EventTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </cards:HoursSquareControl.Style>
+                    </cards:HoursSquareControl>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
     </Grid>
 </Page>
