@@ -36,6 +36,5 @@ namespace EMIAS.ViewModel.Helpers
         {
             _execute(parameter);
         }
-
     }
 }
