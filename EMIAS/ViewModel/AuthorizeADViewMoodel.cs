@@ -101,6 +101,9 @@ namespace EMIAS.ViewModel
                 if (doctorTask.Result.IsSuccessStatusCode)
                 {
                     // Действия для успешной авторизации Doctor
+                    /*DoctorMainWindow doctorMainWindow = new DoctorMainWindow(сюда айди доктора);
+                    doctorMainWindow.Show();*/
+                    MessageBox.Show(doctorLoginModel.Id);
                 }
                 else if (adminTask.Result.IsSuccessStatusCode)
                 {

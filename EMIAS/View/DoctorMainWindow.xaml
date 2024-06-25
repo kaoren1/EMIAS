@@ -3,10 +3,281 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:EMIAS.View"
         mc:Ignorable="d"
-        Title="DoctorMainWindow" Height="450" Width="800">
+        Title="MainWindow" 
+        Height="Auto" Width="1500" MinWidth="427" MinHeight="718"
+        WindowStyle="None"
+        Background="White"
+        ResizeMode="CanResize"
+        SizeToContent="Manual"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        WindowStartupLocation="CenterScreen"
+        StateChanged="Window_StateChanged"
+        Icon="..\Images\icon_emias.jpg">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!-- TitleBar -->
+        <Grid Grid.Row="0">
+            <Border Grid.Row="0" Background="#007BFE" Height="40" VerticalAlignment="Top" MouseDown="TitleBar_MouseDown">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="{Binding TitleName}" VerticalAlignment="Center" Foreground="White" Margin="10,0,10,0" FontWeight="Bold" FontSize="15" Width="Auto" FontFamily="Inter"/>
+                        <Button x:Name="SwitchThemeButton" Grid.Column="1" materialDesign:ButtonAssist.CornerRadius="0" Background="Transparent" BorderBrush="Transparent" Command="{Binding SwitchThemeCommand}">
+                            <Image x:Name="ThemeImage" Grid.Column="1" Source="{Binding ImageTheme}" VerticalAlignment="Center" HorizontalAlignment="Left" Width="Auto" Height="Auto"/>
+                        </Button>
+                    </Grid>
+                    <Grid VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="2" HorizontalAlignment="Right" Background="Transparent" Foreground="White" Click="CloseButton_Click" materialDesign:ButtonAssist.CornerRadius="0" BorderBrush="Transparent">
+                            <Grid>
+                                <Image Source="..\Images\Close1.png" Width="12" Height="12"/>
+                                <Image Source="..\Images\Close2.png" Width="12" Height="12"/>
+                            </Grid>
+                        </Button>
+                        <Button Grid.Column="1"  HorizontalAlignment="Right" Background="Transparent" Foreground="White" Click="MaximizeButton_Click" materialDesign:ButtonAssist.CornerRadius="0" BorderBrush="Transparent">
+                            <Image x:Name="screenmode" Source="..\Images\FullScreen.png" Width="12" Height="12"/>
+                        </Button>
+                        <Button Grid.Column="0"  HorizontalAlignment="Right" Background="Transparent" Foreground="White" Click="MinimizeButton_Click" materialDesign:ButtonAssist.CornerRadius="0" BorderBrush="Transparent">
+                            <Image Source="..\Images\minusbutton.png" Width="12" Height="12"/>
+                        </Button>
+                    </Grid>
+                </Grid>
+            </Border>
+        </Grid>
+        <!-- Main -->
+        <Grid Grid.Row="1" Background="{DynamicResource MainColorBrush}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="75*"/>
+            </Grid.ColumnDefinitions>
+            <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Hidden">
+                <!-- Прием/Отмена записей -->
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid Background="{DynamicResource SecondaryBackgroundBrush}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <!-- Распиание -->
+                        <Border BorderBrush="{DynamicResource SecondaryBackgroundColorBrush}" BorderThickness="1" Margin="10 10, 10, -10">
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Label Content="Расписание: " Foreground="{DynamicResource SecondaryTextBrush}"/>
+                                <DatePicker Grid.Column="1" Language="RU" SelectedDate="{Binding DateNow, Mode=TwoWay}"/>
+                            </Grid>
+                        </Border>
+                        <!-- Записи -->
+                        <Grid Grid.Row="1" Margin="10">
+                            <ItemsControl ItemsSource="{Binding AppointmentCards}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate/>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </Grid>
+                        <!-- Кнопка выйти из аккаунта -->
+                        <Grid Grid.Row="4" Margin="10, 30, 10, 10" materialDesign:ButtonAssist.CornerRadius="0">
+                            <Button Background="#FE0000" Content="Выйти из аккаунта" Foreground="#FFFFFF" FontFamily="Inter" BorderBrush="Transparent" materialDesign:ButtonAssist.CornerRadius="0" Command="{Binding LogoutCommand}"/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </ScrollViewer>
+            <ScrollViewer Grid.Column="1" Visibility="{Binding MainVisibility}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <!-- 0: Имя пациента и полис -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- 1: Прием: -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- 2: Жалобы -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- 3: Общий осмотр -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- 4: Основной диагноз -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- 5: Дополнения к основному диагнозу -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- 6: Рекомендации -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- 7: Направления -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- 8: Направления(список) -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- 9: Анализ(чекбокс) -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- 10: РТБ анализы -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- 11: Исследования(чекбокс) -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- 12: РТБ Исследования -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- 13: Прикрепить файлы (кнопка) -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- 14: Завершить прием (кнопка) -->
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Foreground="{DynamicResource PrimaryTextBrush}" Grid.Column="0" Content="{Binding PatientName}" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Inter" Padding="0, 0, 0, 0"/>
+                        <Grid Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Label Foreground="{DynamicResource PrimaryTextBrush}" Grid.Column="0" Content="Номер полиса: " FontSize="20" FontFamily="Inter" Padding="0, 0, 0, 0"/>
+                            <Label Foreground="{DynamicResource PrimaryTextBrush}" Grid.Column="1" Content="{Binding OMS}" FontSize="20" FontFamily="Inter" Padding="0, 0, 0, 0"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Margin="10, 5, 10, 5" Grid.Row="1">
+                        <Label Foreground="{DynamicResource PrimaryTextBrush}" Content="Прием:" FontSize="16" FontFamily="Inter" Padding="0, 0, 0, 0"/>
+                    </Grid>
+                    <Grid Margin="10" Grid.Row="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Жалобы" Grid.Row="0" Grid.Column="0" Margin="0,0,0,5" Foreground="{DynamicResource SecondaryTextBrush}" FontFamily="Inter" FontSize="14" Padding="0, 0, 0, 0"/>
+                        <TextBox Text="{Binding Complaints}" Grid.Row="1" Grid.Column="0" BorderBrush="{DynamicResource SecondaryBackgroundBrush}" BorderThickness="1" MinHeight="40" FontFamily="Inter" Foreground="{DynamicResource SecondaryTextBrush}" VerticalContentAlignment="Center" FontSize="14" Padding="5"/>
+                    </Grid>
+                    <Grid Margin="10" Grid.Row="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Общий осмотр" Grid.Row="0" Grid.Column="0" Margin="0,0,0,5" Foreground="{DynamicResource SecondaryTextBrush}" FontFamily="Inter" FontSize="14" Padding="0, 0, 0, 0"/>
+                        <TextBox Text="{Binding Examination}" Grid.Row="1" Grid.Column="0" BorderBrush="{DynamicResource SecondaryBackgroundBrush}" BorderThickness="1" MinHeight="40" FontFamily="Inter" Foreground="{DynamicResource SecondaryTextBrush}" VerticalContentAlignment="Center" FontSize="14" Padding="5"/>
+                    </Grid>
+                    <Grid Margin="10" Grid.Row="4">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox Text="{Binding Diagnosis}" Grid.Row="1" Grid.Column="0" BorderBrush="{DynamicResource SecondaryBackgroundBrush}" BorderThickness="1" MinHeight="25" FontFamily="Inter" VerticalContentAlignment="Center" materialDesign:HintAssist.Hint="Основной диагноз" FontSize="14" Padding="5" Foreground="{DynamicResource SecondaryTextBrush}"/>
+                    </Grid>
+                    <Grid Margin="10" Grid.Row="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Дополнения к основному диагнозу" Grid.Row="0" Grid.Column="0" Margin="0,0,0,5" Foreground="{DynamicResource SecondaryTextBrush}" FontFamily="Inter" FontSize="14" Padding="0, 0, 0, 0"/>
+                        <TextBox Text="{Binding AdditionsDiagnosis}" Grid.Row="1" Grid.Column="0" BorderBrush="{DynamicResource SecondaryBackgroundBrush}" BorderThickness="1" MinHeight="40" FontFamily="Inter" Foreground="{DynamicResource SecondaryTextBrush}" VerticalContentAlignment="Center" FontSize="14" Padding="5"/>
+                    </Grid>
+                    <Grid Margin="10" Grid.Row="6">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Рекомендации" Grid.Row="0" Grid.Column="0" Margin="0,0,0,5" Foreground="{DynamicResource SecondaryTextBrush}" FontFamily="Inter" FontSize="14" Padding="0, 0, 0, 0"/>
+                        <TextBox Text="{Binding Recommendations}" Grid.Row="1" Grid.Column="0" BorderBrush="{DynamicResource SecondaryBackgroundBrush}" BorderThickness="1" MinHeight="40" FontFamily="Inter" Foreground="{DynamicResource SecondaryTextBrush}" VerticalContentAlignment="Center" FontSize="14" Padding="5"/>
+                    </Grid>
+                    <Grid Margin="10" Grid.Row="7">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Направления" Grid.Row="0" Grid.Column="0" Foreground="{DynamicResource SecondaryTextBrush}" FontFamily="Inter" FontSize="14" Padding="0, 0, 0, 0"/>
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80*"/>
+                                <ColumnDefinition Width="20*"/>
+                            </Grid.ColumnDefinitions>
+                            <ComboBox ItemsSource="{Binding SpecialitiesList}" SelectedValue="{Binding SelectedSpecialityId}"  DisplayMemberPath="Name" Grid.Column="0" BorderBrush="{DynamicResource SecondaryBackgroundBrush}" BorderThickness="1" MinHeight="25" FontFamily="Inter" VerticalContentAlignment="Center" materialDesign:HintAssist.Hint="Специальность врача" FontSize="14" Padding="5" Foreground="{DynamicResource SecondaryTextBrush}" Margin="0, 0, 15, 0"/>
+                            <Button Command="{Binding AddDirectionCommand}" Margin="15, 0, 0, 0" Grid.Column="1" Background="#007BFE" Content="Добавить направление" Foreground="#FFFFFF" materialDesign:ButtonAssist.CornerRadius="0" BorderBrush="Transparent" Height="Auto"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Margin="10" Grid.Row="8" Background="{DynamicResource SecondaryBackgroundBrush}">
+                        <ItemsControl ItemsSource="{Binding Directions}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Background="{DynamicResource MainColorBrush}" Margin="5" Height="25">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Text="{Binding Path=Name, StringFormat='Направление к специалисту: {0}'}" VerticalAlignment="Center" FontFamily="Inter" Padding="20, 0, 0, 0" FontSize="14" Foreground="{DynamicResource PrimaryTextBrush}" Background="{DynamicResource MainColorBrush}"/>
+                                        <Button Grid.Column="1" Background="Transparent" BorderBrush="Transparent" Foreground="#FE0000" VerticalAlignment="Center" Command="{Binding DataContext.DeleteDirectionCommand, RelativeSource={RelativeSource AncestorType=ItemsControl}}" CommandParameter="{Binding IdDirection}">
+                                            <materialDesign:PackIcon Kind="TrashCanOutline" Height="24" Width="24"/>
+                                        </Button>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </Grid>
+                    <Grid Margin="10" Grid.Row="9">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <CheckBox Grid.Column="0" MinHeight="18" MinWidth="18" Content="Анализ:" FontFamily="Inter" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource PrimaryTextBrush}" IsChecked="{Binding AnalysisCheckBox}" Command="{Binding AnalysisComboBoxCommand}"/>
+                        <TextBox Text="{Binding AnalysisName}" Grid.Column="1" BorderBrush="{DynamicResource SecondaryBackgroundBrush}" BorderThickness="1" MinHeight="20" Height="Auto" FontFamily="Inter" VerticalContentAlignment="Center" materialDesign:HintAssist.Hint="Наименование анализа" FontSize="14" Padding="5" Foreground="{DynamicResource SecondaryTextBrush}" Margin="15, 0, 0, 0"/>
+                    </Grid>
+                    <Grid Margin="10" Grid.Row="10" Visibility="{Binding AnalysisRTBVisibility}">
+                        <ContentControl Content="{Binding RTBAnalysis}" />
+                    </Grid>
+                    <Grid Margin="10" Grid.Row="11">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <CheckBox Grid.Column="0" MinHeight="18" MinWidth="18" Content="Исследования:" FontFamily="Inter" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource PrimaryTextBrush}" IsChecked="{Binding ResearchCheckBox}" Command="{Binding ResearchComboBoxCommand}"/>
+                        <TextBox Text="{Binding ResearchName}" Grid.Column="1" BorderBrush="{DynamicResource SecondaryBackgroundBrush}" BorderThickness="1" MinHeight="20" Height="Auto" FontFamily="Inter" VerticalContentAlignment="Center" materialDesign:HintAssist.Hint="Наименование исследования" FontSize="14" Padding="5" Foreground="{DynamicResource SecondaryTextBrush}" Margin="15, 0, 0, 0"/>
+                    </Grid>
+                    <Grid Margin="10" Grid.Row="12" Visibility="{Binding ResearchRTBVisibility}">
+                        <ContentControl Content="{Binding RTBResearch}" />
+                    </Grid>
+                    <Grid Margin="10" Grid.Row="13" Visibility="{Binding AttachFilesButton}">
+                        <Button Grid.Column="0" Margin="10" Background="#007BFE" Content="{Binding AttachFileButton}" Foreground="#FFFFFF" materialDesign:ButtonAssist.CornerRadius="0" BorderBrush="Transparent" FontSize="16" Command="{Binding AttachFileCommand}"/>
+                    </Grid>
+                    <Grid Margin="10" Grid.Row="14">
+                        <Button Grid.Column="0" Margin="10" Background="#007BFE" Content="Завершить прием" Foreground="#FFFFFF" materialDesign:ButtonAssist.CornerRadius="0" BorderBrush="Transparent" FontSize="16" Command="{Binding CompleteTheAppointmentCommand}"/>
+                    </Grid>
+                </Grid>
+            </ScrollViewer>
+        </Grid>
     </Grid>
 </Window>
