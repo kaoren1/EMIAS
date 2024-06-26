@@ -8,7 +8,7 @@
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
         WindowStyle="None"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:viewmodel="clr-namespace:EMIAS.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:AuthorizePatientViewModel}"
         Title="AuthorizePatient" Height="220" Width="400">
 
     <Grid>
@@ -43,7 +43,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Command="{Binding GetPatient}" Foreground="#FFFFFF" Background="#007BFE" BorderThickness="0" FontSize="16" Margin="14,10,10,10" Content="Войти" Style="{x:Null}"></Button>
+            <Button Grid.Column="0" Command="{Binding PatientAuthorize}" Foreground="#FFFFFF" Background="#007BFE" BorderThickness="0" FontSize="16" Margin="14,10,10,10" Content="Войти" Style="{x:Null}"></Button> 
             <Button Grid.Column="1" Command="{Binding SelectADWindow}" Foreground="#FFFFFF" Background="#007BFE" BorderThickness="0" FontSize="16" Margin="10,10,14,10" Content="Я врач" Style="{x:Null}"></Button>
         </Grid>
     </Grid>

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\c#\emias\EMIAS\App.xaml
-17-542042921
+22478680750
 
-252092945815
+38270322268
 17106307754
-Resources\DarkTheme.xaml;Resources\LightTheme.xaml;View\AdminDoctorWindow.xaml;View\AdminPatientWindow.xaml;View\AdminWindow.xaml;View\AuthorizeADWindow.xaml;View\AuthorizePatientWindow.xaml;View\DoctorMainWindow.xaml;View\MainPatientPage.xaml;View\MainPatientWindow.xaml;View\MakeAppointmentPage.xaml;View\MakeAppointmentPage2.xaml;View\MakeAppointmentSpecialityPage.xaml;View\MeddicalCardResearchPage.xaml;View\MedicalCardAnalysPage.xaml;View\MedicalCardAppointmentPage.xaml;View\ProfilePatientPage.xaml;
+Cards\ArchiveAppointmentControl.xaml;Cards\ArchiveMonthControl.xaml;Cards\CurrentAppointmentControl.xaml;Cards\CurrentMonthControl.xaml;Cards\DoctorControl.xaml;Resources\DarkTheme.xaml;Resources\LightTheme.xaml;View\AdminDoctorWindow.xaml;View\AdminPatientWindow.xaml;View\AdminWindow.xaml;View\AuthorizeADWindow.xaml;View\AuthorizePatientWindow.xaml;View\DoctorMainWindow.xaml;View\MainPatientPage.xaml;View\MainPatientWindow.xaml;View\MakeAppointmentPage.xaml;View\MakeAppointmentPage2.xaml;View\MakeAppointmentSpecialityPage.xaml;View\MeddicalCardResearchPage.xaml;View\MedicalCardAnalysPage.xaml;View\MedicalCardAppointmentPage.xaml;View\ProfilePatientPage.xaml;
 
 True
 

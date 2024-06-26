@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace EMIAS.View
 {
-    /// <summary>
-    /// Логика взаимодействия для MainPatientWindow.xaml
-    /// </summary>
     public partial class MainPatientWindow : Window
     {
         public MainPatientWindow()

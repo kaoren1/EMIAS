@@ -3,16 +3,128 @@
   "WorkspaceRootPath": "D:\\c#\\emias\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|d:\\c#\\emias\\emias\\view\\admindoctorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\view\\admindoctorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\view\\mainpatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\view\\mainpatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|d:\\c#\\emias\\emias\\view\\admindoctorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\view\\admindoctorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\view\\mainpatientwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\view\\mainpatientwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c#\\emias\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\view\\makeappointmentpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\view\\makeappointmentpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\view\\makeappointmentpage2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\view\\makeappointmentpage2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\viewmodel\\authorizepatientviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\viewmodel\\authorizepatientviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\viewmodel\\authorizeadviewmoodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\viewmodel\\authorizeadviewmoodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\viewmodel\\makeappointment2vm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\viewmodel\\makeappointment2vm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\viewmodel\\makeappointmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\viewmodel\\makeappointmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|d:\\c#\\emias\\emias\\view\\makeappointmentpage2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\view\\makeappointmentpage2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\model\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\model\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\view\\makeappointmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\view\\makeappointmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\view\\mainpatientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\view\\mainpatientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\model\\speciality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\model\\speciality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\cards\\currentappointmentcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\cards\\currentappointmentcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\cards\\currentmonthcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\cards\\currentmonthcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\cards\\currentmonthcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\cards\\currentmonthcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\model\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\model\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\model\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\model\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\cards\\currentappointmentcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\cards\\currentappointmentcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\cards\\archivemonthcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\cards\\archivemonthcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\cards\\archiveappointmentcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\cards\\archiveappointmentcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\cards\\archiveappointmentcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\cards\\archiveappointmentcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\cards\\archivemonthcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\cards\\archivemonthcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\model\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\model\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\view\\authorizepatientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\view\\authorizepatientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\cards\\doctorcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\cards\\doctorcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\cards\\doctorcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\cards\\doctorcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\view\\authorizepatientwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\view\\authorizepatientwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\model\\loginmodelpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\model\\loginmodelpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\model\\loginmodeladmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\model\\loginmodeladmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\model\\loginmodeldoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\model\\loginmodeldoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\resources\\lighttheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -21,26 +133,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\resources\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\resources\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\view\\mainpatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\view\\mainpatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\view\\mainpatientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\view\\mainpatientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|D:\\c#\\emias\\emias\\viewmodel\\authorizepatientviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\viewmodel\\authorizepatientviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +142,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 19,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,122 +166,397 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminDoctorWindow.xaml",
-              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\View\\AdminDoctorWindow.xaml",
-              "RelativeDocumentMoniker": "EMIAS\\View\\AdminDoctorWindow.xaml",
-              "ToolTip": "D:\\c#\\emias\\EMIAS\\View\\AdminDoctorWindow.xaml",
-              "RelativeToolTip": "EMIAS\\View\\AdminDoctorWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-20T20:53:05.301Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminDoctorWindow.xaml.cs",
-              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\View\\AdminDoctorWindow.xaml.cs",
-              "RelativeDocumentMoniker": "EMIAS\\View\\AdminDoctorWindow.xaml.cs",
-              "ToolTip": "D:\\c#\\emias\\EMIAS\\View\\AdminDoctorWindow.xaml.cs",
-              "RelativeToolTip": "EMIAS\\View\\AdminDoctorWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 9,
+              "Title": "Direction.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Model\\Direction.cs",
+              "RelativeDocumentMoniker": "EMIAS\\Model\\Direction.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Model\\Direction.cs",
+              "RelativeToolTip": "EMIAS\\Model\\Direction.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAABAAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T20:52:05.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": ".gitignore",
-              "DocumentMoniker": "D:\\c#\\emias\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "D:\\c#\\emias\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI2SURBVDhPrZTBbtpAEIYHbEcgoYDBbnNIrUYK9BX6JH2QKlKP6SlUkXrh0rxDinpJr7wCR44IO5emEg0FpNjgdeYf7wImVXrJwMd6d2dn559dQy9mWZaV9CM1m83jXq8Xli0LE/iSUilxQyrvSLtercg5OKD4Ib7sdi\u002B\u002BTiaT33mEHXM5WL/fV7/u7tRqtVKJIdHw83K5VIPBQA2HQ3Vz81N9u7rqBkHQ0CGorNtNNul6TbPZrMA92vsZxXEsrrwZBcEbqh8efvp4dva\u002BUqlIHFtmtbFs4t1pNBqJvPxnaycnb6lWq9F4PKYkSegPb6BSVWM3KddeMEXVapU6nXcch132gmHg9dGR0Gq16Pr6O02nUyyU2a1MNhQYUsJwQlEYUhQVCaOIWyaMKGE/xJDD0VYIBpm27ZDvv9rgGTyffIPvix/8Mz5lY8VgKqM0TWk\u002Bn2v\u002B0sKw4D7Qc7g2isuCgMY2wTCESZht2/9Fas6bmzWwbWZImSmxz3aRs4NNDsacnBI7cihRY\u002BxJzdYsE5IMIk1YsLwFS85JRWa\u002BxlghGLJDFh4X2ICCo/gCxjxPQKa4SpybXrwXDDsl8YMcfU5\u002BJW53ueVxBpcWEp\u002BRqahSqdJpu63p5JwC7mvaDL9CIhFrjD2pGdJ3XZfcBmhQA7jALSAy8XnuADBlWWWybGDxon\u002BT\u002BxffgM3/Wb3eOD7/fB5aFt8huULiKTvjWWX834bNMIY\u002Bb4tXSqnsw\u002BWX7g9\u002BDVMd6iWM6BGMH6Pc0\u002BxpFgAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-06-20T18:12:18.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T03:19:14.186Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LightTheme.xaml",
-              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Resources\\LightTheme.xaml",
-              "RelativeDocumentMoniker": "EMIAS\\Resources\\LightTheme.xaml",
-              "ToolTip": "D:\\c#\\emias\\EMIAS\\Resources\\LightTheme.xaml",
-              "RelativeToolTip": "EMIAS\\Resources\\LightTheme.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-20T18:00:17.387Z",
+              "Title": "MakeAppointmentPage2.xaml.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\View\\MakeAppointmentPage2.xaml.cs",
+              "RelativeDocumentMoniker": "EMIAS\\View\\MakeAppointmentPage2.xaml.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\View\\MakeAppointmentPage2.xaml.cs",
+              "RelativeToolTip": "EMIAS\\View\\MakeAppointmentPage2.xaml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T03:07:28.65Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\App.xaml.cs",
-              "RelativeDocumentMoniker": "EMIAS\\App.xaml.cs",
-              "ToolTip": "D:\\c#\\emias\\EMIAS\\App.xaml.cs",
-              "RelativeToolTip": "EMIAS\\App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAJAAAA",
+              "DocumentIndex": 6,
+              "Title": "MakeAppointment2VM.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\ViewModel\\MakeAppointment2VM.cs",
+              "RelativeDocumentMoniker": "EMIAS\\ViewModel\\MakeAppointment2VM.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\ViewModel\\MakeAppointment2VM.cs",
+              "RelativeToolTip": "EMIAS\\ViewModel\\MakeAppointment2VM.cs",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAswDUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T18:01:52.126Z"
+              "WhenOpened": "2024-06-26T02:37:14.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ArchiveAppointmentControl.xaml.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Cards\\ArchiveAppointmentControl.xaml.cs",
+              "RelativeDocumentMoniker": "EMIAS\\Cards\\ArchiveAppointmentControl.xaml.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Cards\\ArchiveAppointmentControl.xaml.cs",
+              "RelativeToolTip": "EMIAS\\Cards\\ArchiveAppointmentControl.xaml.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAwwBkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T01:22:10.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CurrentAppointmentControl.xaml.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Cards\\CurrentAppointmentControl.xaml.cs",
+              "RelativeDocumentMoniker": "EMIAS\\Cards\\CurrentAppointmentControl.xaml.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Cards\\CurrentAppointmentControl.xaml.cs",
+              "RelativeToolTip": "EMIAS\\Cards\\CurrentAppointmentControl.xaml.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAwwBkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T01:21:49.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ArchiveMonthControl.xaml.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Cards\\ArchiveMonthControl.xaml.cs",
+              "RelativeDocumentMoniker": "EMIAS\\Cards\\ArchiveMonthControl.xaml.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Cards\\ArchiveMonthControl.xaml.cs",
+              "RelativeToolTip": "EMIAS\\Cards\\ArchiveMonthControl.xaml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAIwBkAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T01:18:50.316Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\App.xaml",
-              "RelativeDocumentMoniker": "EMIAS\\App.xaml",
-              "ToolTip": "D:\\c#\\emias\\EMIAS\\App.xaml",
-              "RelativeToolTip": "EMIAS\\App.xaml",
+              "Title": "MakeAppointmentPage2.xaml",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\View\\MakeAppointmentPage2.xaml",
+              "RelativeDocumentMoniker": "EMIAS\\View\\MakeAppointmentPage2.xaml",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\View\\MakeAppointmentPage2.xaml",
+              "RelativeToolTip": "EMIAS\\View\\MakeAppointmentPage2.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-20T18:00:58.888Z",
+              "WhenOpened": "2024-06-26T00:59:57.911Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DarkTheme.xaml",
-              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Resources\\DarkTheme.xaml",
-              "RelativeDocumentMoniker": "EMIAS\\Resources\\DarkTheme.xaml",
-              "ToolTip": "D:\\c#\\emias\\EMIAS\\Resources\\DarkTheme.xaml*",
-              "RelativeToolTip": "EMIAS\\Resources\\DarkTheme.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-20T17:59:48.712Z"
+              "DocumentIndex": 15,
+              "Title": "CurrentMonthControl.xaml.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Cards\\CurrentMonthControl.xaml.cs",
+              "RelativeDocumentMoniker": "EMIAS\\Cards\\CurrentMonthControl.xaml.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Cards\\CurrentMonthControl.xaml.cs",
+              "RelativeToolTip": "EMIAS\\Cards\\CurrentMonthControl.xaml.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAowBcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T00:32:04.482Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Model\\Doctor.cs",
+              "RelativeDocumentMoniker": "EMIAS\\Model\\Doctor.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Model\\Doctor.cs",
+              "RelativeToolTip": "EMIAS\\Model\\Doctor.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAcwCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T00:06:16.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ArchiveAppointmentControl.xaml",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Cards\\ArchiveAppointmentControl.xaml",
+              "RelativeDocumentMoniker": "EMIAS\\Cards\\ArchiveAppointmentControl.xaml",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Cards\\ArchiveAppointmentControl.xaml",
+              "RelativeToolTip": "EMIAS\\Cards\\ArchiveAppointmentControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T23:51:28.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CurrentAppointmentControl.xaml",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Cards\\CurrentAppointmentControl.xaml",
+              "RelativeDocumentMoniker": "EMIAS\\Cards\\CurrentAppointmentControl.xaml",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Cards\\CurrentAppointmentControl.xaml",
+              "RelativeToolTip": "EMIAS\\Cards\\CurrentAppointmentControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T23:50:57.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ArchiveMonthControl.xaml",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Cards\\ArchiveMonthControl.xaml",
+              "RelativeDocumentMoniker": "EMIAS\\Cards\\ArchiveMonthControl.xaml",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Cards\\ArchiveMonthControl.xaml",
+              "RelativeToolTip": "EMIAS\\Cards\\ArchiveMonthControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T23:50:27.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CurrentMonthControl.xaml",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Cards\\CurrentMonthControl.xaml",
+              "RelativeDocumentMoniker": "EMIAS\\Cards\\CurrentMonthControl.xaml",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Cards\\CurrentMonthControl.xaml",
+              "RelativeToolTip": "EMIAS\\Cards\\CurrentMonthControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T23:50:05.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPatientWindow.xaml.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\View\\MainPatientWindow.xaml.cs",
+              "RelativeDocumentMoniker": "EMIAS\\View\\MainPatientWindow.xaml.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\View\\MainPatientWindow.xaml.cs",
+              "RelativeToolTip": "EMIAS\\View\\MainPatientWindow.xaml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T22:43:06.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "MainPatientPage.xaml",
               "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\View\\MainPatientPage.xaml",
               "RelativeDocumentMoniker": "EMIAS\\View\\MainPatientPage.xaml",
               "ToolTip": "D:\\c#\\emias\\EMIAS\\View\\MainPatientPage.xaml",
               "RelativeToolTip": "EMIAS\\View\\MainPatientPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-20T15:32:10.352Z"
+              "WhenOpened": "2024-06-25T22:42:47.702Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "MakeAppointmentPage.xaml.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\View\\MakeAppointmentPage.xaml.cs",
+              "RelativeDocumentMoniker": "EMIAS\\View\\MakeAppointmentPage.xaml.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\View\\MakeAppointmentPage.xaml.cs",
+              "RelativeToolTip": "EMIAS\\View\\MakeAppointmentPage.xaml.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAYwBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T21:31:31.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DoctorControl.xaml.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Cards\\DoctorControl.xaml.cs",
+              "RelativeDocumentMoniker": "EMIAS\\Cards\\DoctorControl.xaml.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Cards\\DoctorControl.xaml.cs",
+              "RelativeToolTip": "EMIAS\\Cards\\DoctorControl.xaml.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAIwC4AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T21:23:05.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Speciality.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Model\\Speciality.cs",
+              "RelativeDocumentMoniker": "EMIAS\\Model\\Speciality.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Model\\Speciality.cs",
+              "RelativeToolTip": "EMIAS\\Model\\Speciality.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T21:18:08.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DoctorControl.xaml",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Cards\\DoctorControl.xaml",
+              "RelativeDocumentMoniker": "EMIAS\\Cards\\DoctorControl.xaml",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Cards\\DoctorControl.xaml",
+              "RelativeToolTip": "EMIAS\\Cards\\DoctorControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T20:00:14.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Model\\Patient.cs",
+              "RelativeDocumentMoniker": "EMIAS\\Model\\Patient.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Model\\Patient.cs",
+              "RelativeToolTip": "EMIAS\\Model\\Patient.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA0wBQAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T19:23:08.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LoginModelPatient.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Model\\LoginModelPatient.cs",
+              "RelativeDocumentMoniker": "EMIAS\\Model\\LoginModelPatient.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Model\\LoginModelPatient.cs",
+              "RelativeToolTip": "EMIAS\\Model\\LoginModelPatient.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T19:06:04.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "LoginModelDoctor.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Model\\LoginModelDoctor.cs",
+              "RelativeDocumentMoniker": "EMIAS\\Model\\LoginModelDoctor.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Model\\LoginModelDoctor.cs",
+              "RelativeToolTip": "EMIAS\\Model\\LoginModelDoctor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T19:04:51.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "LoginModelAdmin.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Model\\LoginModelAdmin.cs",
+              "RelativeDocumentMoniker": "EMIAS\\Model\\LoginModelAdmin.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Model\\LoginModelAdmin.cs",
+              "RelativeToolTip": "EMIAS\\Model\\LoginModelAdmin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T19:04:48.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Model\\Appointment.cs",
+              "RelativeDocumentMoniker": "EMIAS\\Model\\Appointment.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Model\\Appointment.cs",
+              "RelativeToolTip": "EMIAS\\Model\\Appointment.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAuwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T19:04:19.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MakeAppointmentPage.xaml",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\View\\MakeAppointmentPage.xaml",
+              "RelativeDocumentMoniker": "EMIAS\\View\\MakeAppointmentPage.xaml",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\View\\MakeAppointmentPage.xaml",
+              "RelativeToolTip": "EMIAS\\View\\MakeAppointmentPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T18:38:46.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "MainPatientWindow.xaml",
               "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\View\\MainPatientWindow.xaml",
               "RelativeDocumentMoniker": "EMIAS\\View\\MainPatientWindow.xaml",
               "ToolTip": "D:\\c#\\emias\\EMIAS\\View\\MainPatientWindow.xaml",
               "RelativeToolTip": "EMIAS\\View\\MainPatientWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-20T15:30:00.446Z"
+              "WhenOpened": "2024-06-25T18:35:38.781Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 31,
+              "Title": "LightTheme.xaml",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Resources\\LightTheme.xaml",
+              "RelativeDocumentMoniker": "EMIAS\\Resources\\LightTheme.xaml",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Resources\\LightTheme.xaml",
+              "RelativeToolTip": "EMIAS\\Resources\\LightTheme.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T18:33:02.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "DarkTheme.xaml",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\Resources\\DarkTheme.xaml",
+              "RelativeDocumentMoniker": "EMIAS\\Resources\\DarkTheme.xaml",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\Resources\\DarkTheme.xaml",
+              "RelativeToolTip": "EMIAS\\Resources\\DarkTheme.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T18:32:49.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MakeAppointmentVM.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\ViewModel\\MakeAppointmentVM.cs",
+              "RelativeDocumentMoniker": "EMIAS\\ViewModel\\MakeAppointmentVM.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\ViewModel\\MakeAppointmentVM.cs",
+              "RelativeToolTip": "EMIAS\\ViewModel\\MakeAppointmentVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAI0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T07:39:50.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AuthorizePatientWindow.xaml.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\View\\AuthorizePatientWindow.xaml.cs",
+              "RelativeDocumentMoniker": "EMIAS\\View\\AuthorizePatientWindow.xaml.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\View\\AuthorizePatientWindow.xaml.cs",
+              "RelativeToolTip": "EMIAS\\View\\AuthorizePatientWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T07:34:07.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AuthorizePatientWindow.xaml",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\View\\AuthorizePatientWindow.xaml",
+              "RelativeDocumentMoniker": "EMIAS\\View\\AuthorizePatientWindow.xaml",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\View\\AuthorizePatientWindow.xaml",
+              "RelativeToolTip": "EMIAS\\View\\AuthorizePatientWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T07:33:48.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthorizeADViewMoodel.cs",
+              "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\ViewModel\\AuthorizeADViewMoodel.cs",
+              "RelativeDocumentMoniker": "EMIAS\\ViewModel\\AuthorizeADViewMoodel.cs",
+              "ToolTip": "D:\\c#\\emias\\EMIAS\\ViewModel\\AuthorizeADViewMoodel.cs",
+              "RelativeToolTip": "EMIAS\\ViewModel\\AuthorizeADViewMoodel.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAswGQAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T19:40:21.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AuthorizePatientViewModel.cs",
               "DocumentMoniker": "D:\\c#\\emias\\EMIAS\\ViewModel\\AuthorizePatientViewModel.cs",
               "RelativeDocumentMoniker": "EMIAS\\ViewModel\\AuthorizePatientViewModel.cs",
               "ToolTip": "D:\\c#\\emias\\EMIAS\\ViewModel\\AuthorizePatientViewModel.cs",
               "RelativeToolTip": "EMIAS\\ViewModel\\AuthorizePatientViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFkAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T15:29:47.286Z"
+              "WhenOpened": "2024-06-24T19:31:55.503Z",
+              "EditorCaption": ""
             }
           ]
         },

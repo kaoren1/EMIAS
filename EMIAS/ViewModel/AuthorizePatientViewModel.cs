@@ -1,27 +1,26 @@
-﻿using EMIAS.View;
+﻿using EMIAS.Model;
+using EMIAS.View;
 using EMIAS.ViewModel.Helpers;
 using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
 using System.Net.Http;
 using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace EMIAS.ViewModel
 {
     public partial class AuthorizePatientViewModel : INotifyPropertyChanged
     {
         public BindableCommand PatientAuthorize { get; set; }
-        public BindableCommand SelectADWindow { get; set; }
-
 
         HttpClient httpClient;
 
         private string _oms;
+        private Patient _selectedPatient;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -35,48 +34,72 @@ namespace EMIAS.ViewModel
             }
         }
 
-        private string _apiResponse;
-        public string ApiResponse
+
+        public ObservableCollection<Patient> Patients { get; set; }
+
+        public Patient SelectedPatient
         {
-            get { return _apiResponse; }
+            get { return _selectedPatient; }
             set
             {
-                _apiResponse = value;
+                _selectedPatient = value;
                 OnPropertyChanged();
             }
         }
 
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
         public AuthorizePatientViewModel()
         {
-            SelectADWindow = new BindableCommand(_ => SelectWindow());
-            PatientAuthorize = new BindableCommand(_ => GetPatient());
+            httpClient = new HttpClient();
+            Patients = new ObservableCollection<Patient>();
+            PatientAuthorize = new BindableCommand(async _ => await AuthorizePatient());
+
+           
         }
 
-        private async Task GetPatient()
+        private async Task AuthorizePatient()
         {
             if (string.IsNullOrEmpty(OMS))
             {
+                MessageBox.Show("Пожалуйста, введите ОМС и пароль.");
                 return;
             }
 
             try
             {
-                var apiUrl = $"http://localhost:7084/getoms/{OMS}";
-                var response = await httpClient.GetAsync(apiUrl);
+                var response = await httpClient.GetAsync($"http://localhost:5181/api/Patients/{OMS}");
 
                 if (response.IsSuccessStatusCode)
                 {
-                    ApiResponse = await response.Content.ReadAsStringAsync();
-                    MessageBox.Show("Успех");
+                    var patientJson = await response.Content.ReadAsStringAsync();
+                    var patient = JsonConvert.DeserializeObject<Patient>(patientJson);
+
+                    if (patient != null && patient.Oms == long.Parse(OMS))
+                    {
+
+                        if (!Patients.Contains(patient))
+                        {
+                            Patients.Add(patient);
+                        }
+                        SelectedPatient = patient;
+
+                        var mainWindow = new MainPatientWindow();
+                        mainWindow.DataContext = this; 
+                        mainWindow.Show();
+
+                
+                        var frame = mainWindow.FindName("PageFrame") as Frame;
+                        frame.Navigate(new MakeAppointmentPage());
+
+                        Application.Current.Windows[0]?.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ошибка авторизации: неверный ОМС.");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Ошибка: Запрос не выполнен.");
+                    MessageBox.Show("Ошибка авторизации: неверный ОМС.");
                 }
             }
             catch (Exception ex)
@@ -85,10 +108,40 @@ namespace EMIAS.ViewModel
             }
         }
 
-        private void SelectWindow()
+        //private async void LoadAllPatients()
+        //{
+        //    try
+        //    {
+        //        var response = await httpClient.GetAsync("http://localhost:5181/api/Patients");
+
+        //        if (response.IsSuccessStatusCode)
+        //        {
+        //            var patientsJson = await response.Content.ReadAsStringAsync();
+        //            var patients = JsonConvert.DeserializeObject<ObservableCollection<Patient>>(patientsJson);
+
+        //            if (patients != null)
+        //            {
+        //                Patients.Clear();
+        //                foreach (var patient in patients)
+        //                {
+        //                    Patients.Add(patient);
+        //                }
+        //            }
+        //        }
+        //        else
+        //        {
+        //            MessageBox.Show("Ошибка загрузки списка пациентов.");
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Ошибка: " + ex.Message);
+        //    }
+        //}
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
-            AuthorizePatientWindow a = new AuthorizePatientWindow();
-            a.Show();
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

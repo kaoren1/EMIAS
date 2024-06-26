@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EMIAS.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,14 +16,12 @@ using System.Windows.Shapes;
 
 namespace EMIAS.View
 {
-    /// <summary>
-    /// Логика взаимодействия для MakeAppointmentPage2.xaml
-    /// </summary>
     public partial class MakeAppointmentPage2 : Page
     {
         public MakeAppointmentPage2()
         {
             InitializeComponent();
+            DataContext = new MakeAppointment2VM();
         }
     }
 }
