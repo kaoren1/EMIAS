@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\sharo\source\repos\EMIAS\EMIAS\obj\Debug\net8.0-windows\
+C:\Users\Яр\source\repos\EMIAS\EMIAS\obj\Debug\net8.0-windows\
 EMIAS
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\sharo\source\repos\EMIAS\EMIAS\App.xaml
-11-59109452
+C:\Users\Яр\source\repos\EMIAS\EMIAS\App.xaml
+321530580458
 
-32-2035926909
-202-236568234
-Resources\DarkTheme.xaml;Resources\LightTheme.xaml;View\AuthorizeADWindow.xaml;View\AuthorizePatientWindow.xaml;View\Cards\AnalysisRichTextBoxView.xaml;View\Cards\AppointmentRichTextBoxView.xaml;View\Cards\CompletedAppointment.xaml;View\Cards\CurrentAppointment.xaml;View\Cards\MissedAppointment.xaml;View\Cards\ResearchRichTextBoxView.xaml;View\DoctorMainWindow.xaml;
+63956733964
+202-92870816
+Resources\DarkTheme.xaml;Resources\LightTheme.xaml;View\AdminDoctorWindow.xaml;View\AdminPatientWindow.xaml;View\AdminWindow.xaml;View\AuthorizeADWindow.xaml;View\AuthorizePatientWindow.xaml;View\Cards\AnalysisRichTextBoxView.xaml;View\Cards\AppointmentRichTextBoxView.xaml;View\Cards\ArchiveAppointmentControl.xaml;View\Cards\ArchiveMonthControl.xaml;View\Cards\CompletedAppointment.xaml;View\Cards\CurrentAppointment.xaml;View\Cards\CurrentAppointmentControl.xaml;View\Cards\CurrentMonthControl.xaml;View\Cards\DaySquareControl.xaml;View\Cards\DoctorControl.xaml;View\Cards\HoursSquareControl.xaml;View\Cards\MissedAppointment.xaml;View\Cards\ResearchRichTextBoxView.xaml;View\Cards\SpecialistSquareControl.xaml;View\DoctorMainWindow.xaml;View\MainPatientPage.xaml;View\MainPatientWindow.xaml;View\MakeAppointmentPage.xaml;View\MakeAppointmentPage2.xaml;View\MakeAppointmentSpecialityPage.xaml;View\MakeAppointmentSpecialityPage2.xaml;View\MeddicalCardResearchPage.xaml;View\MedicalCardAnalysPage.xaml;View\MedicalCardAppointmentPage.xaml;View\ProfilePatientPage.xaml;
 
 False
 

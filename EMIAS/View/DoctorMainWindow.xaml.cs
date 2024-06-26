@@ -8,8 +8,7 @@ namespace EMIAS.View
 {
     public partial class DoctorMainWindow : Window
     {
-        int id = 1; //типо получил айди доктора
-        public DoctorMainWindow()
+        public DoctorMainWindow(int id)
         {
             InitializeComponent();
             DataContext = new DoctorMainWindowViewModel(id);

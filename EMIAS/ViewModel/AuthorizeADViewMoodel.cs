@@ -63,12 +63,9 @@ namespace EMIAS.ViewModel
         {
             httpClient = new HttpClient();
             LoginCommand = new BindableCommand(_ => Login());
-            SelectCommand = new BindableCommand(_ => SelectPatientWindow());
         }
 
         public BindableCommand LoginCommand { get; set; }
-        public BindableCommand SelectCommand { get; set; }
-
 
         private async Task Login()
         {
@@ -80,7 +77,7 @@ namespace EMIAS.ViewModel
             try
             {
                 // Запрос к Doctor API
-                var doctorApiUrl = "http://localhost:7084/getloginDoctor";
+                var doctorApiUrl = "http://localhost:5181/getloginDoctor";
                 var doctorLoginModel = new LoginModelDoctor { Id = LoginId, Password = Password };
                 var doctorJson = JsonConvert.SerializeObject(doctorLoginModel);
                 var doctorContent = new StringContent(doctorJson, System.Text.Encoding.UTF8, "application/json");
@@ -88,7 +85,7 @@ namespace EMIAS.ViewModel
                 var doctorTask = httpClient.PostAsync(doctorApiUrl, doctorContent);
 
                 // Запрос к Admin API
-                var adminApiUrl = "http://localhost:7084/getloginAdmin";
+                var adminApiUrl = "http://localhost:5181/getloginAdmin";
                 var adminLoginModel = new LoginModelAdmin { IdAdmin = LoginId, EnterPassword = Password };
                 var adminJson = JsonConvert.SerializeObject(adminLoginModel);
                 var adminContent = new StringContent(adminJson, System.Text.Encoding.UTF8, "application/json");
@@ -100,18 +97,12 @@ namespace EMIAS.ViewModel
 
                 if (doctorTask.Result.IsSuccessStatusCode)
                 {
-                    // Действия для успешной авторизации Doctor
-                    /*DoctorMainWindow doctorMainWindow = new DoctorMainWindow(сюда айди доктора);
-                    doctorMainWindow.Show();*/
-                    MessageBox.Show(doctorLoginModel.Id);
+                    DoctorMainWindow doctorMainWindow = new DoctorMainWindow(Convert.ToInt32(LoginId));
+                    doctorMainWindow.Show();
                 }
                 else if (adminTask.Result.IsSuccessStatusCode)
                 {
                     // Действия для успешной авторизации Admin
-                }
-                else
-                {
-                    // Действия для неудачной авторизации
                 }
 
             }

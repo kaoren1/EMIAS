@@ -12,12 +12,14 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Linq;
 using System.Windows.Documents;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace EMIAS.ViewModel
 {
     class DoctorMainWindowViewModel : BindingHelper
     {
-        private string port = "7084";
+        private string port = "5181";
         private bool isDarkTheme = false;
         private Appointment currentAppointment;
         private DoctorWithSpecialityName currentDoctor;
@@ -27,30 +29,54 @@ namespace EMIAS.ViewModel
         byte[] fileBytes = null;
         public DoctorMainWindowViewModel(int id_doctor)
         {
-            GetDoctorDetailsByID(id_doctor);
-            titleName = $"ЕМИАС — {currentDoctor.Surname} {currentDoctor.Name} {currentDoctor.Patronymic}";
-            specialityName = currentDoctor.SpecialityName;
-            doctorInitials = $"{currentDoctor.Surname} {currentDoctor.Name[0]}. {currentDoctor.Patronymic[0]}.";
+            // Запускаем задачу, чтобы не блокировать UI-поток 
+            Task.Run(async () => {
+                // Вызываем GetDoctorDetailsByID асинхронно
+                await GetDoctorDetailsByID(id_doctor).ConfigureAwait(false);
 
-            SwitchThemeCommand = new BindableCommand(_ => SwitchTheme()); //изменить тему приложения
-            AnalysisComboBoxCommand = new BindableCommand(_ => AnalysisRTB()); //показать/убрать анализы
-            ResearchComboBoxCommand = new BindableCommand(_ => ResearchRTB()); //показать/убрать исследования
-            StartAppointmentCommand = new BindableCommand(ShowOMS); //для открытия карточки пациента
-            CancelAppointmentCommand = new BindableCommand(CancelAppointment); //кнопка отменить запись
-            CancelMissedAppointmentCommand = new BindableCommand(CancelMissedAppointment); //отменить пропущенную запись
-            CompleteTheAppointmentCommand = new BindableCommand(_ => CompleteTheAppointment()); //кнопка завершить прием
-            DeleteDirectionCommand = new BindableCommand(DeleteDirection); //удалить направление пациента
+                // Обновляем UI после завершения запроса
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    if (currentDoctor != null)
+                    {
+                        titleName = $"ЕМИАС — {currentDoctor.Surname} {currentDoctor.Name} {currentDoctor.Patronymic}";
+                        specialityName = currentDoctor.SpecialityName;
+                        doctorInitials = $"{currentDoctor.Surname} {currentDoctor.Name[0]}. {currentDoctor.Patronymic[0]}.";
+                    }
+                    else
+                    {
+                        // Выводим сообщение об ошибке или устанавливаем значения по умолчанию
+                        titleName = "ЕМИАС";
+                        specialityName = "Специальность неизвестна";
+                        doctorInitials = "Инициалы не найдены";
+                    }
+                });
+            });
+
+            // Инициализация команд
+            SwitchThemeCommand = new BindableCommand(_ => SwitchTheme());
+            AnalysisComboBoxCommand = new BindableCommand(_ => AnalysisRTB());
+            ResearchComboBoxCommand = new BindableCommand(_ => ResearchRTB());
+            StartAppointmentCommand = new BindableCommand(ShowOMS);
+            CancelAppointmentCommand = new BindableCommand(CancelAppointment);
+            CancelMissedAppointmentCommand = new BindableCommand(CancelMissedAppointment);
+            CompleteTheAppointmentCommand = new BindableCommand(_ => CompleteTheAppointment());
+            DeleteDirectionCommand = new BindableCommand(DeleteDirection);
             AddDirectionCommand = new BindableCommand(_ => AddDirection());
             AttachFileCommand = new BindableCommand(_ => AttachFile());
-            LogoutCommand = new BindableCommand(_ => Logout()); //кнопка выйти из аккаунта
-            analysisRTBVisibility = Visibility.Collapsed; //РТБ с анализами по дефолту скрыта
-            researchRTBVisibility = Visibility.Collapsed; //РТБ с исследованиями по дефолту скрыта
-            AttachFilesButton = Visibility.Collapsed; //Кнопка прикрепить файлы по дефолту скрыта
+            LogoutCommand = new BindableCommand(_ => Logout());
+
+            // Начальные значения для UI
+            analysisRTBVisibility = Visibility.Collapsed;
+            researchRTBVisibility = Visibility.Collapsed;
+            AttachFilesButton = Visibility.Collapsed;
             MainVisibility = Visibility.Hidden;
 
+            // Дополнительные инициализации
             UpdateCurrentAppointments();
             GetSpecialitiesList();
         }
+
 
         #region Свойства
         #region Список_специальностей
@@ -493,18 +519,37 @@ namespace EMIAS.ViewModel
         public BindableCommand AttachFileCommand { get; set; }
         #endregion
 
-        private void GetDoctorDetailsByID(int id_doctor)
+        private async Task GetDoctorDetailsByID(int id_doctor)
         {
-            var json = ApiHelper.Get($"https://localhost:{port}/api/Doctors/WithSpecialityName?id={id_doctor}");
-            var result = JsonConvert.DeserializeObject<DoctorWithSpecialityName>(json);
-            currentDoctor = result;
+            using (var httpClient = new HttpClient())
+            {
+                var apiUrl = $"https://localhost:{port}/api/Doctors/WithSpecialityName?id={id_doctor}";
+                var response = await httpClient.GetAsync(apiUrl);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var json = await response.Content.ReadAsStringAsync();
+                    currentDoctor = JsonConvert.DeserializeObject<DoctorWithSpecialityName>(json);
+                }
+            }
         }
 
-        private void GetSpecialitiesList() //получения списка специалностей врачей
+
+        private async Task GetSpecialitiesList() //получения списка специалностей врачей
         {
-            var json = ApiHelper.Get($"https://localhost:{port}/api/Specialities");
-            var result = JsonConvert.DeserializeObject<List<Speciality>>(json);
-            SpecialitiesList = new List<Speciality>(result);
+            using (var httpClient = new HttpClient())
+            {
+                var apiUrl = $"https://localhost:{port}/api/Specialities";
+                var response = await httpClient.GetAsync(apiUrl);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var json = await response.Content.ReadAsStringAsync();
+                    var result = JsonConvert.DeserializeObject<List<Speciality>>(json);
+                    SpecialitiesList = new List<Speciality>(result);
+                }
+
+            }
         }
 
         private void AttachFile()
@@ -566,63 +611,78 @@ namespace EMIAS.ViewModel
             }
         }
 
-        private void UpdateCurrentAppointments() //метод для обновления списка записей
+        private async Task UpdateCurrentAppointments() //метод для обновления списка записей
         {
             var dateNow = DateOnly.FromDateTime(DateTime.Now);
             var timeNow = TimeOnly.FromDateTime(DateTime.Now);
 
             string DateNowAPI = DateTime.Parse(DateNow).ToString("yyyy-MM-dd");
-            var json = ApiHelper.Get($"https://localhost:{port}/api/Appointments/WithPatientDetails?date={DateNowAPI}");
-            var result = JsonConvert.DeserializeObject<ObservableCollection<Appointment>>(json);
-
-            var currentAppointmentsTemp = new ObservableCollection<Appointment>();
-            var missedAppointmentsTemp = new ObservableCollection<Appointment>();
-            var completedAppointmentsTemp = new ObservableCollection<Appointment>();
-
-            var combinedAppointments = new List<Appointment>();
-            var appointmentCards = new ObservableCollection<UserControl>();
-
-            foreach (var appointment in result)
+            using (var httpClient = new HttpClient())
             {
-                if (appointment.StatusId == 1)
-                {
-                    var appointmentDate = appointment.AppointmentDate;
-                    var appointmentTime = appointment.AppointmentTime;
+                var apiUrl = $"https://localhost:{port}/api/Appointments/WithPatientDetails?date={DateNowAPI}";
+                var response = await httpClient.GetAsync(apiUrl);
 
-                    if (appointmentDate < dateNow ||
-                        (appointmentDate == dateNow && appointmentTime < timeNow))
-                    {
-                        MissedAppointment missedAppointment = new MissedAppointment(appointment);
-                        missedAppointmentsTemp.Add(appointment);
-                        appointmentCards.Add(missedAppointment);
-                    }
-                    else
-                    {
-                        CurrentAppointment currentAppointment = new CurrentAppointment(appointment);
-                        currentAppointmentsTemp.Add(appointment);
-                        appointmentCards.Add(currentAppointment);
-                    }
-                }
-                else if (appointment.StatusId == 2)
+                if (response.IsSuccessStatusCode)
                 {
-                    CompletedAppointment completedAppointment = new CompletedAppointment(appointment);
-                    completedAppointmentsTemp.Add(appointment);
-                    appointmentCards.Add(completedAppointment);
-                }
+                    var json = await response.Content.ReadAsStringAsync();
+                    var result = JsonConvert.DeserializeObject<ObservableCollection<Appointment>>(json);
 
-                combinedAppointments.Add(appointment);
+                    var currentAppointmentsTemp = new ObservableCollection<Appointment>();
+                    var missedAppointmentsTemp = new ObservableCollection<Appointment>();
+                    var completedAppointmentsTemp = new ObservableCollection<Appointment>();
+
+                    var combinedAppointments = new List<Appointment>();
+                    var appointmentCards = new ObservableCollection<UserControl>();
+
+                    foreach (var appointment in result)
+                    {
+                        if (appointment.StatusId == 1)
+                        {
+                            var appointmentDate = appointment.AppointmentDate;
+                            var appointmentTime = appointment.AppointmentTime;
+
+                            if (appointmentDate < dateNow ||
+                                (appointmentDate == dateNow && appointmentTime < timeNow))
+                            {
+                                MissedAppointment missedAppointment = new MissedAppointment(appointment);
+                                missedAppointmentsTemp.Add(appointment);
+                                appointmentCards.Add(missedAppointment);
+                            }
+                            else
+                            {
+                                CurrentAppointment currentAppointment = new CurrentAppointment(appointment);
+                                currentAppointmentsTemp.Add(appointment);
+                                appointmentCards.Add(currentAppointment);
+                            }
+                        }
+                        else if (appointment.StatusId == 2)
+                        {
+                            CompletedAppointment completedAppointment = new CompletedAppointment(appointment);
+                            completedAppointmentsTemp.Add(appointment);
+                            appointmentCards.Add(completedAppointment);
+                        }
+
+                        combinedAppointments.Add(appointment);
+                    }
+
+                    CurrentAppointments = currentAppointmentsTemp;
+                    MissedAppointments = missedAppointmentsTemp;
+                    CompletedAppointments = completedAppointmentsTemp;
+
+                    AllAppointments = new ObservableCollection<Appointment>(combinedAppointments.OrderBy(a => a.AppointmentDate).ThenBy(a => a.AppointmentTime));//сортировка записей по времени
+
+                    AppointmentCards = appointmentCards;
+                }
+                else
+                {
+                    // Обработка ошибки:
+                    // Например, выведите сообщение пользователю
+                    MessageBox.Show($"Ошибка получения данных: {response.StatusCode}");
+                }
             }
-
-            CurrentAppointments = currentAppointmentsTemp;
-            MissedAppointments = missedAppointmentsTemp;
-            CompletedAppointments = completedAppointmentsTemp;
-
-            AllAppointments = new ObservableCollection<Appointment>(combinedAppointments.OrderBy(a => a.AppointmentDate).ThenBy(a => a.AppointmentTime));//сортировка записей по времени
-
-            AppointmentCards = appointmentCards;
         }
 
-        private void SaveAnalysDocument()
+                private void SaveAnalysDocument()
         {
             TextRange textRange = new TextRange(analysisRTB.Document.ContentStart, analysisRTB.Document.ContentEnd);
             string rtfText;

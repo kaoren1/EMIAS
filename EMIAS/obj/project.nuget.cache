@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "7IMV16PmHeRs9srb0zF4UowOfU2yROEVKaD/DbiUZ5gVjSDJzpgaiVHv+WSQXNmg7PItD2RbQrZkt8jZ+wezHQ==",
+  "dgSpecHash": "pwxoGkhxHBpPvaE4pEOwUWqAxfsekg4K8ZYrhBJLrBRnleha7yZZdFHjJICMYlHOzgbkbFFW7OgoQSNyVstfiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sharo\\source\\repos\\EMIAS\\EMIAS\\EMIAS.csproj",
+  "projectFilePath": "C:\\Users\\Яр\\source\\repos\\EMIAS\\EMIAS\\EMIAS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\sharo\\.nuget\\packages\\materialdesigncolors\\3.0.0\\materialdesigncolors.3.0.0.nupkg.sha512",
-    "C:\\Users\\sharo\\.nuget\\packages\\materialdesignthemes\\5.0.0\\materialdesignthemes.5.0.0.nupkg.sha512",
-    "C:\\Users\\sharo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\sharo\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
-    "C:\\Users\\sharo\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\sharo\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+    "C:\\Users\\Яр\\.nuget\\packages\\materialdesigncolors\\3.0.0\\materialdesigncolors.3.0.0.nupkg.sha512",
+    "C:\\Users\\Яр\\.nuget\\packages\\materialdesignthemes\\5.0.0\\materialdesignthemes.5.0.0.nupkg.sha512",
+    "C:\\Users\\Яр\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Яр\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "C:\\Users\\Яр\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Яр\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -16,11 +16,9 @@ namespace EMIAS.ViewModel
     public partial class AuthorizePatientViewModel : INotifyPropertyChanged
     {
         public BindableCommand PatientAuthorize { get; set; }
-        public BindableCommand SelectADWindow { get; set; }
-
 
         HttpClient httpClient;
-
+        //Оригинальный
         private string _oms;
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -53,8 +51,8 @@ namespace EMIAS.ViewModel
 
         public AuthorizePatientViewModel()
         {
-            SelectADWindow = new BindableCommand(_ => SelectWindow());
-            PatientAuthorize = new BindableCommand(_ => GetPatient());
+            PatientAuthorize = new BindableCommand(async _ => await GetPatient());
+            httpClient = new HttpClient();
         }
 
         private async Task GetPatient()
@@ -66,29 +64,19 @@ namespace EMIAS.ViewModel
 
             try
             {
-                var apiUrl = $"http://localhost:7084/getoms/{OMS}";
+                var apiUrl = $"http://localhost:5181/getoms/{OMS}";
                 var response = await httpClient.GetAsync(apiUrl);
 
                 if (response.IsSuccessStatusCode)
                 {
-                    ApiResponse = await response.Content.ReadAsStringAsync();
-                    MessageBox.Show("Успех");
-                }
-                else
-                {
-                    MessageBox.Show("Ошибка: Запрос не выполнен.");
+                    MainPatientWindow m = new MainPatientWindow();
+                    m.Show();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка: " + ex.Message);
+                MessageBox.Show("Ошибка: " + ex);
             }
-        }
-
-        private void SelectWindow()
-        {
-            AuthorizePatientWindow a = new AuthorizePatientWindow();
-            a.Show();
         }
     }
 }

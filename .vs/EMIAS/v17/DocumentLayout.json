@@ -1,30 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sharo\\source\\repos\\EMIAS\\",
+  "WorkspaceRootPath": "C:\\Users\\\u042F\u0440\\source\\repos\\EMIAS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|c:\\users\\sharo\\source\\repos\\emias\\emias\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|c:\\users\\\u044F\u0440\\source\\repos\\emias\\emias\\viewmodel\\makeappointmentspecialityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\viewmodel\\makeappointmentspecialityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|c:\\users\\sharo\\source\\repos\\emias\\emias\\viewmodel\\authorizeadviewmoodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\viewmodel\\authorizeadviewmoodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|c:\\users\\\u044F\u0440\\source\\repos\\emias\\emias\\view\\mainpatientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\view\\mainpatientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|c:\\users\\sharo\\source\\repos\\emias\\emias\\viewmodel\\authorizepatientviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\viewmodel\\authorizepatientviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|c:\\users\\\u044F\u0440\\source\\repos\\emias\\emias\\viewmodel\\makeappointmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\viewmodel\\makeappointmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|c:\\users\\sharo\\source\\repos\\emias\\emias\\view\\doctormainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\view\\doctormainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|c:\\users\\sharo\\source\\repos\\emias\\emias\\viewmodel\\doctormainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\viewmodel\\doctormainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|c:\\users\\sharo\\source\\repos\\emias\\emias\\view\\doctormainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\view\\doctormainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|c:\\users\\\u044F\u0440\\source\\repos\\emias\\emias\\viewmodel\\makeappointment2vm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3571BFD9-AA2C-41CE-9A66-07F824C159FB}|EMIAS\\EMIAS.csproj|solutionrelative:emias\\viewmodel\\makeappointment2vm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,67 +26,53 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\sharo\\source\\repos\\EMIAS\\EMIAS\\App.xaml",
-              "RelativeDocumentMoniker": "EMIAS\\App.xaml",
-              "ToolTip": "C:\\Users\\sharo\\source\\repos\\EMIAS\\EMIAS\\App.xaml",
-              "RelativeToolTip": "EMIAS\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-25T10:21:52.808Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AuthorizePatientViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\sharo\\source\\repos\\EMIAS\\EMIAS\\ViewModel\\AuthorizePatientViewModel.cs",
-              "RelativeDocumentMoniker": "EMIAS\\ViewModel\\AuthorizePatientViewModel.cs",
-              "ToolTip": "C:\\Users\\sharo\\source\\repos\\EMIAS\\EMIAS\\ViewModel\\AuthorizePatientViewModel.cs",
-              "RelativeToolTip": "EMIAS\\ViewModel\\AuthorizePatientViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "MakeAppointmentVM.cs",
+              "DocumentMoniker": "C:\\Users\\\u042F\u0440\\source\\repos\\EMIAS\\EMIAS\\ViewModel\\MakeAppointmentVM.cs",
+              "RelativeDocumentMoniker": "EMIAS\\ViewModel\\MakeAppointmentVM.cs",
+              "ToolTip": "C:\\Users\\\u042F\u0440\\source\\repos\\EMIAS\\EMIAS\\ViewModel\\MakeAppointmentVM.cs",
+              "RelativeToolTip": "EMIAS\\ViewModel\\MakeAppointmentVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T18:35:33.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T15:42:33.635Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DoctorMainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\sharo\\source\\repos\\EMIAS\\EMIAS\\View\\DoctorMainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "EMIAS\\View\\DoctorMainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\sharo\\source\\repos\\EMIAS\\EMIAS\\View\\DoctorMainWindow.xaml.cs",
-              "RelativeToolTip": "EMIAS\\View\\DoctorMainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAvAAAA",
+              "DocumentIndex": 0,
+              "Title": "MakeAppointmentSpecialityViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\\u042F\u0440\\source\\repos\\EMIAS\\EMIAS\\ViewModel\\MakeAppointmentSpecialityViewModel.cs",
+              "RelativeDocumentMoniker": "EMIAS\\ViewModel\\MakeAppointmentSpecialityViewModel.cs",
+              "ToolTip": "C:\\Users\\\u042F\u0440\\source\\repos\\EMIAS\\EMIAS\\ViewModel\\MakeAppointmentSpecialityViewModel.cs",
+              "RelativeToolTip": "EMIAS\\ViewModel\\MakeAppointmentSpecialityViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T18:27:57.066Z",
+              "WhenOpened": "2024-06-26T16:22:33.289Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthorizeADViewMoodel.cs",
-              "DocumentMoniker": "C:\\Users\\sharo\\source\\repos\\EMIAS\\EMIAS\\ViewModel\\AuthorizeADViewMoodel.cs",
-              "RelativeDocumentMoniker": "EMIAS\\ViewModel\\AuthorizeADViewMoodel.cs",
-              "ToolTip": "C:\\Users\\sharo\\source\\repos\\EMIAS\\EMIAS\\ViewModel\\AuthorizeADViewMoodel.cs",
-              "RelativeToolTip": "EMIAS\\ViewModel\\AuthorizeADViewMoodel.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAuwGkAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T18:27:27.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -114,15 +92,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -130,27 +100,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DoctorMainWindowViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\sharo\\source\\repos\\EMIAS\\EMIAS\\ViewModel\\DoctorMainWindowViewModel.cs",
-              "RelativeDocumentMoniker": "EMIAS\\ViewModel\\DoctorMainWindowViewModel.cs",
-              "ToolTip": "C:\\Users\\sharo\\source\\repos\\EMIAS\\EMIAS\\ViewModel\\DoctorMainWindowViewModel.cs",
-              "RelativeToolTip": "EMIAS\\ViewModel\\DoctorMainWindowViewModel.cs",
-              "ViewState": "AQIAADgDAAAAAAAAAAAuwFQDAABLAAAA",
+              "DocumentIndex": 3,
+              "Title": "MakeAppointment2VM.cs",
+              "DocumentMoniker": "C:\\Users\\\u042F\u0440\\source\\repos\\EMIAS\\EMIAS\\ViewModel\\MakeAppointment2VM.cs",
+              "RelativeDocumentMoniker": "EMIAS\\ViewModel\\MakeAppointment2VM.cs",
+              "ToolTip": "C:\\Users\\\u042F\u0440\\source\\repos\\EMIAS\\EMIAS\\ViewModel\\MakeAppointment2VM.cs",
+              "RelativeToolTip": "EMIAS\\ViewModel\\MakeAppointment2VM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T18:24:26.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T16:09:50.938Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DoctorMainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\sharo\\source\\repos\\EMIAS\\EMIAS\\View\\DoctorMainWindow.xaml",
-              "RelativeDocumentMoniker": "EMIAS\\View\\DoctorMainWindow.xaml",
-              "ToolTip": "C:\\Users\\sharo\\source\\repos\\EMIAS\\EMIAS\\View\\DoctorMainWindow.xaml",
-              "RelativeToolTip": "EMIAS\\View\\DoctorMainWindow.xaml",
+              "DocumentIndex": 1,
+              "Title": "MainPatientWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u042F\u0440\\source\\repos\\EMIAS\\EMIAS\\View\\MainPatientWindow.xaml",
+              "RelativeDocumentMoniker": "EMIAS\\View\\MainPatientWindow.xaml",
+              "ToolTip": "C:\\Users\\\u042F\u0440\\source\\repos\\EMIAS\\EMIAS\\View\\MainPatientWindow.xaml",
+              "RelativeToolTip": "EMIAS\\View\\MainPatientWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-25T18:23:36.147Z",
+              "WhenOpened": "2024-06-26T16:09:32.665Z",
               "EditorCaption": ""
             }
           ]

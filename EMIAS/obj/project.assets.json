@@ -300,23 +300,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sharo\\.nuget\\packages\\": {},
+    "C:\\Users\\Яр\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sharo\\source\\repos\\EMIAS\\EMIAS\\EMIAS.csproj",
+      "projectUniqueName": "C:\\Users\\Яр\\source\\repos\\EMIAS\\EMIAS\\EMIAS.csproj",
       "projectName": "EMIAS",
-      "projectPath": "C:\\Users\\sharo\\source\\repos\\EMIAS\\EMIAS\\EMIAS.csproj",
-      "packagesPath": "C:\\Users\\sharo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sharo\\source\\repos\\EMIAS\\EMIAS\\obj\\",
+      "projectPath": "C:\\Users\\Яр\\source\\repos\\EMIAS\\EMIAS\\EMIAS.csproj",
+      "packagesPath": "C:\\Users\\Яр\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Яр\\source\\repos\\EMIAS\\EMIAS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\sharo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Яр\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -325,6 +325,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -392,7 +393,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

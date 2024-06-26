@@ -1,0 +1,102 @@
+﻿<Page x:Class="EMIAS.View.MakeAppointmentPage"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:EMIAS.View"
+      xmlns:cards="clr-namespace:EMIAS.Cards"
+      mc:Ignorable="d"
+      d:DesignHeight="850" d:DesignWidth="1180"
+      Title="MakeAppointmentPage">
+
+    <Grid Background="{DynamicResource PrimaryBG}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.025*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.025*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="1" FontSize="20px" Width="70px" Height="24px" HorizontalAlignment="Left" VerticalAlignment="Top" Text="Запись"></TextBlock>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Grid.Column="1" Grid.Row="1" Background="{DynamicResource SecondaryBG}">
+            <StackPanel Orientation="Horizontal" Background="{DynamicResource SecondaryBG}">
+                <ListBox ItemsSource="{Binding Specialities}">
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center"/>
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <cards:DoctorControl/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </ScrollViewer>
+
+        <Grid Grid.Column="1" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.35*"/>
+                <ColumnDefinition Width="0.25*"/>
+                <ColumnDefinition Width="0.25*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock FontSize="20px" Width="214px" Height="24px" HorizontalAlignment="Left" VerticalAlignment="Center">Действующие записи</TextBlock>
+
+            <DatePicker Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Width="147" Height="22" materialDesign:HintAssist.Hint="Записи с:"></DatePicker>
+            <DatePicker Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" Width="147" Height="22" materialDesign:HintAssist.Hint="Записи по:"></DatePicker>
+        </Grid>
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Grid.Column="1" Grid.Row="3" Background="White">
+            <ItemsControl ItemsSource="{Binding AppointmentMonths}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal" ItemWidth="500" ItemHeight="Auto" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <cards:CurrentMonthControl Margin="10" />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+        <Grid Grid.Column="1" Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.35*"/>
+                <ColumnDefinition Width="0.25*"/>
+                <ColumnDefinition Width="0.25*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock FontSize="20px" Width="214px" Height="24px" HorizontalAlignment="Left" VerticalAlignment="Center">Архивные записи</TextBlock>
+            <DatePicker Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Width="147" Height="22" materialDesign:HintAssist.Hint="Записи с:"></DatePicker>
+            <DatePicker Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" Width="147" Height="22" materialDesign:HintAssist.Hint="Записи по:"></DatePicker>
+        </Grid>
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Grid.Column="1" Grid.Row="5" Background="White">
+            <ItemsControl ItemsSource="{Binding ArchivedMonths}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal" ItemWidth="500" ItemHeight="Auto" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <cards:CurrentMonthControl Margin="10" MinHeight="300"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+        <Button Background="#FF007BFE" Click="Button_Click" Width="1133px" Grid.Column="1" Grid.Row="6" Height="28px" Content="Записаться на прием" Foreground="White" FontSize="16" VerticalAlignment="Center"></Button>
+    </Grid>
+</Page>

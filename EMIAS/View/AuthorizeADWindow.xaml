@@ -8,7 +8,7 @@
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
         WindowStyle="None"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:viewmodel="clr-namespace:EMIAS.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:AuthorizeADViewModel}"
         Title="AuthorizeAD" Height="220" Width="400">
     <Grid>
         <Grid.RowDefinitions>
@@ -50,7 +50,7 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Button Grid.Column="0" Command="{Binding LoginCommand}" Foreground="#FFFFFF" Background="#007BFE" BorderThickness="0" FontSize="16" Margin="14,12,10,10" Content="Войти" Style="{x:Null}"></Button>
-            <Button Grid.Column="1" Command="{Binding SelectCommand}" Foreground="#FFFFFF" Background="#007BFE" BorderThickness="0" FontSize="16" Margin="10,12,14,10" Content="Я пациент" Style="{x:Null}"></Button>
+            <Button Grid.Column="1" x:Name="SelectPatientWindow" Foreground="#FFFFFF" Background="#007BFE" BorderThickness="0" FontSize="16" Margin="10,12,14,10" Content="Я пациент" Style="{x:Null}" Click="SelectPatientWindow_Click"></Button>
         </Grid>
     </Grid>
 </Window>

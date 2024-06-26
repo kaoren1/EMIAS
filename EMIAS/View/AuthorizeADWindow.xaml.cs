@@ -25,5 +25,12 @@ namespace EMIAS.View
             InitializeComponent();
             DataContext = new AuthorizeADViewModel();
         }
+
+        private void SelectPatientWindow_Click(object sender, RoutedEventArgs e)
+        {
+            AuthorizePatientWindow authorizePatientWindow = new AuthorizePatientWindow();
+            authorizePatientWindow.Show();
+            this.Close();
+        }
     }
 }

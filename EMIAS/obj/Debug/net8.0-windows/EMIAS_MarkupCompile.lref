@@ -1,5 +1,24 @@
 ﻿
-FC:\Users\sharo\source\repos\EMIAS\EMIAS\App.xaml;;
-FC:\Users\sharo\source\repos\EMIAS\EMIAS\View\AuthorizeADWindow.xaml;;
-FC:\Users\sharo\source\repos\EMIAS\EMIAS\View\AuthorizePatientWindow.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\App.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\AuthorizeADWindow.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\AuthorizePatientWindow.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\MainPatientWindow.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\AdminDoctorWindow.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\AdminPatientWindow.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\AdminWindow.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\Cards\ArchiveAppointmentControl.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\Cards\ArchiveMonthControl.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\Cards\CurrentAppointmentControl.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\Cards\CurrentMonthControl.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\Cards\DoctorControl.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\MainPatientPage.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\MakeAppointmentPage.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\MakeAppointmentPage2.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\MakeAppointmentSpecialityPage.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\MeddicalCardResearchPage.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\MedicalCardAnalysPage.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\MedicalCardAppointmentPage.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\Cards\SpecialistSquareControl.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\MakeAppointmentSpecialityPage2.xaml;;
+FC:\Users\Яр\source\repos\EMIAS\EMIAS\View\ProfilePatientPage.xaml;;
 
